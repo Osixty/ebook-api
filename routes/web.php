@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('coba', function () {
-    return 'sigit asu';
+    return 'sigit ';
 });
