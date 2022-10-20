@@ -20,7 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// Route::get('me', [AuthController::class, 'me']);
+Route::get('me', [AuthController::class, 'me']);
 Route::get('/books', [BookController::class, 'index']);
 Route::get('/books/{id}', [BookController::class, 'swoh']);
 Route::post('/books', [BookController::class, 'store']); 
