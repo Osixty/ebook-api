@@ -43,6 +43,12 @@ class BookController extends Controller
             "publisher"=>$request->publisher,
             "date_of_issue"=>$request->date_of_issue,
         ]);
+
+        return response()->json([
+            'succes' => 201,
+            'message' => 'Berhasil',
+            'data' => $table
+        ], 201);
     }
 
     /**
